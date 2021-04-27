@@ -1,7 +1,7 @@
 // COLORS 
 
-$primary-color: #1e3a57;
-$secondary-color: #ff9a8a;
+$primary-color: #183f69;
+$secondary-color: #f18c64;
 $third-color: #a09bd7;
 
 // FONTS 
@@ -12,5 +12,9 @@ $font-weights: (
     "medium": 500,
     "bold": 700
 );
+
+@function font-weight($weight) {
+    @return map-get($font-weights, $weight)
+}
 
 $font-family: 'Cormorant Garamond', serif;
